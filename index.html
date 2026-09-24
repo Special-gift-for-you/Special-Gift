@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120c12">
+  <title>Jomana🤍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts-container" aria-hidden="true"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+
+<main class="app">
+
+  <!-- PAGE 1 -->
+  <section class="card page active" id="page1">
+    <div class="mini-label">🤍To the most beautiful person in my life </div>
+    <div class="heart-logo">♡</div>
+    <div class="date-pill"> 🔐 .One look. One feeling. One beautiful story</div>
+
+    <h1 class="title">🌍Jumana </h1>
+    <p class="subtitle">
+      مش كل الحكايات بتبدأ بكلام كتير...
+      أحيانًا بتبدأ بنظرة، وبعدها صدفة، وبعدها شخص بيبقى مهم جدًا.
+    </p>
+
+    <div class="secret-box">
+      <span>🔐</span>
+      <input type="password" id="password" inputmode="numeric"
+             placeholder="اكتبي اكتر تاريخ مميز عندك يا عيوني 😍">
+    </div>
+
+    <button onclick="goNext()">دخول<span>♡</span></button>
+    <p class="hint">السر مش تاريخ واحد... هو بداية حكاية كاملة. 🤍</p>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="card page hidden" id="page2">
+    <div class="section-number">01</div>
+    <div class="story-date">23 • 08</div>
+    <h2>أول مرة شوفتك 🤍</h2>
+
+    <p class="story">
+      يوم 23 أغسطس كان أول مرة أشوفك فيها.
+      وقتها مكنتش أعرف إن البنت اللي شوفتها لأول مرة
+      هتفضل تاخد مساحة أكبر وأكبر في تفكيري.
+      كانت مجرد أول لحظة... بس كانت بداية حاجة أنا لسه بكتشفها.
+    </p>
+
+    <div class="quote">
+      <span>“</span>
+      بعض الناس بنشوفهم مرة...
+      وبعدها بنفضل فاكرين اللحظة دي.
+      <span>”</span>
+    </div>
+
+    <button onclick="goNext2()">طب إمتى بدأت أحب وجودك؟ →</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="card page hidden" id="page3">
+    <div class="section-number">02</div>
+    <div class="story-date crush-date">10 • 09</div>
+    <h2>اليوم اللي بدأت أكراش عليكي فيه 💕</h2>
+
+    <p class="story">
+      يوم 10 سبتمبر هو اليوم اللي الموضوع عندي بدأ ياخد شكل تاني.
+      مابقتيش مجرد بنت شوفتها وخلاص...
+      بدأت ألاقي نفسي بفكر فيكي أكتر، وألاحظ تفاصيلك أكتر،
+      وأفرح من غير سبب لما ألاقي فرصة أتكلم معاكي.
+    </p>
+
+    <div class="crush-card">
+      <div class="pulse-heart">♥</div>
+      <div>
+        <strong>10/09</strong>
+        <span>هنا بدأ الكراش 🤍</span>
+      </div>
+    </div>
+
+    <button onclick="goPage4()">وبعدين جه 15 سبتمبر... ♡</button>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="card page hidden" id="page4">
+    <div class="section-number">03</div>
+    <div class="story-date">15 • 09</div>
+    <h2>أول مرة اتكلمنا وبقينا صحاب</h2>
+
+    <p class="story">
+      وبعد يوم 10 سبتمبر، جه 15 سبتمبر...
+      اليوم اللي اتكلمنا فيه وبقينا أصحاب، رغم إن الموقف نفسه مكنش أنسب موقف نتعرف فيه 😂🤍.
+      ومن هنا الحكاية بقت أجمل،
+      لأن الكراش مبقاش مجرد إحساس من بعيد...
+      ومن ساعتها بقيت بفرح لما تبعتي تسألي عن أي حاجة، حتى لو سؤال بسيط؛ كان كفاية إن الرسالة منك عشان يومي يبقى أحلى.
+    </p>
+
+    <div class="timeline-mini">
+      <div><b>23/08</b><span>أول مرة شوفتك</span></div>
+      <i></i>
+      <div class="active-step"><b>10/09</b><span>بدأت أكراش عليكي</span></div>
+      <i></i>
+      <div><b>15/09</b><span>بقينا أصحاب</span></div>
+    </div>
+
+    <button onclick="goPage5()">وفي 22 سبتمبر حصلت أهم خطوة... 🤍</button>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="card page hidden" id="page5">
+    <div class="section-number">04</div>
+    <div class="story-date special-date">22 • 09</div>
+    <h2>اليوم اللي الحكاية بقت بينا 🤍</h2>
+
+    <p class="story">
+      22 سبتمبر...
+      اليوم اللي مبقاش فيه الموضوع مجرد كراش أو إعجاب أو كلام أصحاب.
+      اليوم اللي اعترفنا فيه لبعض، وكان من أجمل الأيام عندي بجد؛ الفرحة وقتها كانت مش سيعاني.
+      ولما أبص لكل اللي حصل من 23 أغسطس لحد هنا،
+      بحس إن كل تاريخ كان بيقربني منك خطوة.
+    </p>
+
+    <div class="big-date">22/09</div>
+
+    <div class="journey">
+      <span>شوفتك</span>
+      <b>←</b>
+      <span>كراش</span>
+      <b>←</b>
+      <span>صحاب</span>
+      <b>←</b>
+      <span>مع بعض 🤍</span>
+    </div>
+
+    <button onclick="goPage6()">دلوقتي بقى... شوية مسدجات ليكي ♡</button>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="card page hidden" id="page6">
+    <div class="section-number">05</div>
+    <h2>مسدجات لجمانة... واحدة واحدة 🤍</h2>
+
+    <div class="messages">
+      <div class="message reveal-message"><span>01</span><p>من 23/8 وأنا معرفش إن اللحظة الصغيرة دي هتعمل كل الفرق ده.</p></div>
+      <div class="message reveal-message"><span>02</span><p>10/9 هو اليوم اللي اكتشفت فيه إنك مش مجرد شخص لفت انتباهي... لأ، أنا بدأت أكراش عليكي بجد 😂🤍</p></div>
+      <div class="message reveal-message"><span>03</span><p>15/9 كان أحلى لأنه خلاني أعرفك وأتكلم معاكي بدل ما أفضل مجرد واحد معجب بيكي من بعيد.</p></div>
+      <div class="message reveal-message"><span>04</span><p>22/9 بقى التاريخ اللي جمع كل الحاجات دي في حاجة واحدة: إحنا.</p></div>
+      <div class="message reveal-message"><span>05</span><p>أنا بحب إن الحكاية بتاعتنا ليها تفاصيل وتواريخ أقدر أفتكرها واحدة واحدة.</p></div>
+      <div class="message reveal-message"><span>06</span><p>ومهما حصل بعد كده، هفضل مبسوط إن جمانة كانت واحدة من أجمل الصدف اللي دخلت حياتي.</p></div>
+    </div>
+
+    <button onclick="finish()">آخر حاجة... لجمانة 🤍</button>
+  </section>
+
+
+
+</main>
+
+<!-- FINAL SCREEN -->
+<div class="overlay hidden" id="finalScreen">
+  <div class="final-box">
+    <div class="final-heart">♡</div>
+    <div class="final-small">ONE LAST THING, JOMANA</div>
+    <h1>أنا واثق فيكي 🤍</h1>
+
+    <div class="final-photo">
+      <div class="photo-shine"></div>
+      <img src="bac.jpg" alt="Jomana" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+      <div class="photo-fallback">حطي صورتك هنا 🤍<small>bac.jpeg</small></div>
+    </div>
+
+    <p>
+      جمانة، عايزك تعرفي إني واثق فيكي جدًا.
+      <br><br>
+      السنة دي وإنتي في تالتة إعدادي، أنا متأكد إنك هتتعبي
+      وهتذاكري وهتعملي اللي عليكي، ومجموعك هيبقى عالي أوي بإذن الله.
+      <br><br>
+      وان في ثانوي ربنا هيكرمك باذن الله
+      وأشوفك في يوم من الأيام <strong>أشطر دكتورة</strong> وأنا عارف من دلوقتي
+      إنك قدها.
+      <br><br>
+      والأهم من كل ده...
+      <strong>مبيهونش عليا أشوفك زعلانة أو حاجة تضايقك.</strong>
+      نفسي دايمًا أشوفك مبسوطة وفخورة بنفسك.
+      <br><br>
+      وافتكري دايمًا إن يوم 22/09 كان من أجمل الأيام عندي...
+      اليوم اللي اعترفنا لبعض فيه، والفرحة وقتها كانت مش سيعاني بجد. 🤍
+    </p>
+
+    <div class="final-signature">23/08 → 10/09 → 15/09 → 22/09</div>
+    <button onclick="closeFinal()">أرجع لأول الحكاية ♡</button>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const pages = ["page1","page2","page3","page4","page5","page6"];
+
+  function showPage(id) {
+    pages.forEach(page => {
+      const el = document.getElementById(page);
+      if (el) el.classList.add("hidden");
+    });
+    const target = document.getElementById(id);
+    if (target) {
+      target.classList.remove("hidden");
+      target.classList.remove("active");
+      void target.offsetWidth;
+      target.classList.add("active");
+    }
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+
+  function goNext() {
+    const value = document.getElementById("password").value.trim()
+      .replace(/\s+/g,"").replace(/[^\d]/g,"");
+    if (value === "882026") {
+      showPage("page2");
+      startMusic();
+    } else {
+      const input = document.getElementById("password");
+      input.classList.remove("wrong");
+      void input.offsetWidth;
+      input.classList.add("wrong");
+      input.value = "";
+      input.placeholder = "السر مش كده... جربي تاني 🤍";
+    }
+  }
+
+  function goNext2(){ showPage("page3"); }
+  function goPage4(){ showPage("page4"); }
+  function goPage5(){ showPage("page5"); }
+  function goPage6(){ showPage("page6"); }
+
+  function finish(){
+    document.getElementById("finalScreen").classList.remove("hidden");
+    startMusic();
+    burstHearts();
+  }
+
+  function closeFinal(){
+    document.getElementById("finalScreen").classList.add("hidden");
+    showPage("page1");
+  }
+
+  function startMusic(){
+    const music = document.getElementById("bgMusic");
+    if(music) music.play().catch(()=>{});
+  }
+
+  document.getElementById("password").addEventListener("keydown",e=>{
+    if(e.key==="Enter") goNext();
+  });
+
+  const hearts = document.querySelector(".hearts-container");
+  const symbols = ["♡","♥","✦","❤","·"];
+  for(let i=0;i<34;i++){
+    const h=document.createElement("span");
+    h.className="floating-heart";
+    h.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    h.style.left=Math.random()*100+"%";
+    h.style.animationDelay=Math.random()*7+"s";
+    h.style.animationDuration=(5+Math.random()*8)+"s";
+    h.style.fontSize=(9+Math.random()*18)+"px";
+    hearts.appendChild(h);
+  }
+
+  function burstHearts(){
+    for(let i=0;i<28;i++){
+      const h=document.createElement("span");
+      h.className="burst-heart";
+      h.textContent="♥";
+      h.style.setProperty("--x",(Math.random()*2-1)*260+"px");
+      h.style.setProperty("--y",(Math.random()*2-1)*260+"px");
+      h.style.setProperty("--r",(Math.random()*720-360)+"deg");
+      h.style.left="50%";
+      h.style.top="50%";
+      document.body.appendChild(h);
+      setTimeout(()=>h.remove(),1300);
+    }
+  }
+</script>
+
+</body>
+</html>
